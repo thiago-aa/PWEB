@@ -3,6 +3,10 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://investnews.com.br/wp-content/uploads/2020/07/200612-F-PO640-1478.jpeg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -11,6 +15,22 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    background-color: rgba(0, 0, 0, 0.650);
+    color: #ccc;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main a {
+    color: hsl(210 100% 60%);
+}
+
+img {
+ border: 1px solid rgb(0, 0, 0);
+ border-radius: 10px;
 }
 
 p {
@@ -22,6 +42,26 @@ p {
 h1 {
     font-size: 40px;
 }
+
 h2 {
     margin-top: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.650);;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+header h2 {
+    margin: 25px 0px 25px 0px;
+}
+
+header span {
+    font-weight: 100;
 }

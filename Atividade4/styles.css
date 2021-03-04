@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ccc;
+    background-color: black;
+}
+header {
+    font-size: 40px;
+    border: 1px solid #ccc;
+    padding: 25px 200px;
+}
+section {
+    max-width: 50%;
+}
+article {
+    border-bottom: 1px dashed #ccc;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+img {
+    max-width: 500px;
+    max-height: auto;
+}

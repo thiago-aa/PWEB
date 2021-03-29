@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 6</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
-<body>
+<body id="body">
+    <h3>JOKENPO! Escolha sua jogada!</h3>
+    <form id="form">
+        <label>
+            <input 
+                type="radio" 
+                name="jokenpo" 
+                id="pedra"
+                onchange="handleChoice()"
+            >Pedra
+        </label>
+        <label>
+            <input 
+                type="radio" 
+                name="jokenpo" 
+                id="papel"
+                onchange="handleChoice()"
+            >Papel
+        </label>
+        <label>
+            <input 
+                type="radio" 
+                name="jokenpo" 
+                id="tesoura"
+                onchange="handleChoice()"
+            >Tesoura
+        </label>
+    </form>
+    <div id="result"></div>
     
 </body>
+<script src="script.js"></script>
 </html>

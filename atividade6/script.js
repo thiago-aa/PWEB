@@ -1,39 +1,55 @@
-let choice = parseInt(prompt('Escolha a sua jogada:\n1 - Pedra\n2 - Papel\n3 - Tesoura\n0 - Sair'));
-
-let computerChoice = Math.random();// x < 0.33 = Pedra 
-                                   // 0.33 > x < 0.66 = Papel
-                                   // x > 0.66 = Tesoura
-while(choice !== 0){
+const pedra = document.getElementById('pedra');
+const papel = document.getElementById('papel');
+const tesoura = document.getElementById('tesoura');
+const resultDiv = document.getElementById('result');
+console.log(resultDiv);
+let choice;
+const handleChoice = () => {
+    let computerChoice = Math.random();// x < 0.33 = Pedra 
+                                       // 0.33 > x < 0.66 = Papel
+                                       // x > 0.66 = Tesoura
+    if(pedra.checked) {
+        choice = 1;
+        console.log(choice);
+    } else if(papel.checked) {
+        choice = 2;
+        console.log(choice);
+    } else {
+        choice = 3;
+        console.log(choice);
+    }
     switch(choice) {
         case 1:
            if( computerChoice < 0.33) {
-               alert('O computador escolheu Pedra, vocês empataram :|');
+               document.getElementById('result').innerHTML = 'O computador escolheu Pedra, vocês empataram :| <button onclick="handleReset()">Jogar Novamente</button>';
            }  else if (computerChoice > 0.66) {
-               alert('O computador escolheu Papel, Você perdeu! D:');
+            document.getElementById('result').innerHTML = 'O computador escolheu Papel, Você perdeu! D: <button onclick="handleReset()">Jogar Novamente</button>';
            } else{
-               alert('O computador escolheu Tesoura, Você venceu! :D ');
+            document.getElementById('result').innerHTML = 'O computador escolheu Tesoura, Você venceu! :D <button onclick="handleReset()">Jogar Novamente</button>';
            }
         break;
         case 2:
             if( computerChoice < 0.33) {
-                alert('O computador escolheu Pedra, Você venceu :D');
+                document.getElementById('result').innerHTML = 'O computador escolheu Pedra, Você venceu :D <button onclick="handleReset()">Jogar Novamente</button>';
             }  else if (computerChoice > 0.66) {
-                alert('O computador escolheu Papel, vocês empataram! :|');
+                document.getElementById('result').innerHTML = 'O computador escolheu Papel, vocês empataram! :| <button onclick="handleReset()">Jogar Novamente</button>';
             } else{
-                alert('O computador escolheu Tesoura, Você perdeu! D:');
+                document.getElementById('result').innerHTML = 'O computador escolheu Tesoura, Você perdeu! D: <button onclick="handleReset()">Jogar Novamente</button>';
             }
         break;
         case 3:
             if( computerChoice < 0.33) {
-                alert('O computador escolheu Pedra, Você perdeu D:');
+                document.getElementById('result').innerHTML = 'O computador escolheu Pedra, Você perdeu D: <button onclick="handleReset()">Jogar Novamente</button>';
             }  else if (computerChoice > 0.66) {
-                alert('O computador escolheu Papel, Você venceu! :D');
+                document.getElementById('result').innerHTML = 'O computador escolheu Papel, Você venceu! :D <button onclick="handleReset()">Jogar Novamente</button>';
             } else{
-                alert('O computador escolheu Tesoura, vocês empataram! :|');
+                document.getElementById('result').innerHTML = 'O computador escolheu Tesoura, vocês empataram! :| <button onclick="handleReset()">Jogar Novamente</button>';
             } 
         break;
     }
-    choice = parseInt(prompt('Escolha a sua jogada:\n1 - Pedra\n2 - Papel\n3 - Tesoura\n0 - Sair'));
-    computerChoice = Math.random();
-}                                   
+}
 
+const handleReset = () => {
+    document.getElementById('form').reset();
+    document.getElementById('result').innerHTML = '';
+}

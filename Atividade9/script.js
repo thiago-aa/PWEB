@@ -101,7 +101,7 @@ nPoupanca.setSaldo(25.00);
 nPoupanca.setJuros(0.5);
 nPoupanca.setDataVencimento('22/01');
 console.log(
-    `CONTA CORRENTE
+    `CONTA POUPANÇA
      Nome Correntista: ${nPoupanca.getNomeCorrentista()}\n
      Banco: ${nPoupanca.getBanco()}\n
      Numero da conta: ${nPoupanca.getNumConta()}\n

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Portifólio</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#works">Projetos</a>
+      <a href="#contact">Contatos</a>
+    </nav>
+    <section id="about">
+      <p>
+        Thiago Alves de Almeida
+      </p>
+      <p>
+        0030481913032
+      </p>
+      <p>
+        Análise e desenvolvimento de Sistemas
+      </p>
+      <p>
+        Noturno
+      </p>
+    </section>
+
+
+    <section id="works">
+      <header>
+        Pojetos
+      </header>
+      <div class="buttons-container">
+        <button onclick="todo()">
+          To-Do List  
+        </button>
+  
+        <button onclick="calculadora()">
+          Calculdora
+        </button>
+  
+        <button onclick="starwars()">
+          Star Wars App
+        </button>
+  
+        <button onclick="product()">
+          Product Landing Page
+        </button>
+      </div>
+      <div class="project-container">
+        <div id="project">
+          <a 
+            href="https://github.com/thiago-aa/react-todo-app" 
+            target="_blank"
+            id="img_inicial"
+            >
+              <img 
+                class="print" 
+                src="./img/todoList.png" 
+                alt="Imagem do app to-do list"
+              >
+          </a>
+        </div>
+        <div id="description">
+          <p id="fst-desc">Um app de lista de afazeres feito em react.js</p>
+        </div>
+      </div>
+    </section>
+
+    <bottom id="contact">
+      <h1>Contatos:</h1>
+      <p>
+        Meu github: 
+        <a href="https://github.com/thiago-aa/" target="_blank">thiago-aa</a>
+      </p>
+      <p>
+        Meu Linkedin:
+        <a href="https://www.linkedin.com/in/thiago-almeida-a52791192/" target="_blank">Thiago Almeida</a>
+      </p>
+      <p>
+        Meu e-mail: 
+        <a href="mailto:thiago.almeida39@fatec.sp.gov.br">thiago.almeida39@fatec.sp.gov.br</a>
+      </p>
+      <p>Telefone: 15 98154-6148</p>
+    </bottom>
+  </main>
+</body>
+<script src="index.js"></script>
+</html>

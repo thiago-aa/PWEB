@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>Formulário Principal</header>
+  <form onsubmit="return validar()">
+    <label name="formulario">
+      Nome
+      <input 
+        type="text" 
+        id="name"
+        required
+      >
+    </label>
+    <label>
+      Email
+      <input 
+        type="email" 
+        id="email"
+        required
+      >
+    </label>
+    <label>
+      Comentário
+      <textarea 
+        id="coment" 
+        cols="30" 
+        rows="10"
+        required
+      ></textarea>
+    </label>
+    <div class="pesquisa">
+      <p>
+        Primeira vez na página?
+      </p>
+      <label>
+        Sim
+        <input type="radio" name="pesquisa" id="yes" checked>
+      </label>
+      <label>
+        Não
+        <input type="radio" name="pesquisa" id="no">
+      </label>
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+      <button>Limpar</button>
+    </div>
+    <p id="correction"></p>
+  </form>
+</body>
+<script src="script.js"></script>
+</html>
